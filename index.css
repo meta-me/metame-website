@@ -2,11 +2,11 @@
   background-color: #212121
 }
 
-.feature-icon {
+img.feature-icon {
   margin-top: 20px;
 }
 
-h5 {
+h5.feature-header {
   margin-top: 20px;
 }
 
