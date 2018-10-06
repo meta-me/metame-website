@@ -3,5 +3,6 @@
 }
 
 .feature > * {
-  margin: 20px 20px 0px 20px;
+  margin-top: 20px;
+  margin-left: 50px;
 }
