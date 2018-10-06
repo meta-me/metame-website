@@ -1,3 +1,7 @@
 .hero {
   background-color: #212121
 }
+
+.hero-content {
+  width: 80%
+}
