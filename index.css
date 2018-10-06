@@ -2,12 +2,12 @@
   background-color: #212121
 }
 
-.feature-icon {
+.feature-icon > img {
   width: 128px;
   height: 128px;
-  margin-top: 20px;
 }
 
+.feature-icon,
 .feature-heading,
 .feature-description {
   margin-top: 20px;
