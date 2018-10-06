@@ -2,11 +2,6 @@
   background-color: #212121
 }
 
-.feature-icon > img {
-  width: 128px;
-  height: 128px;
-}
-
 .feature-icon,
 .feature-heading,
 .feature-description {
