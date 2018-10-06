@@ -2,8 +2,14 @@
   background-color: #212121
 }
 
-.feature-icon,
-.feature-heading,
+.feature-icon {
+  margin-top: 20px;
+}
+
+.feature-heading {
+  margin-top: 20px;
+}
+
 .feature-description {
   margin-top: 20px;
 }
