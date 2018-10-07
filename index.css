@@ -2,6 +2,10 @@
   background-color: #212121;
 }
 
+.hero-description {
+  font-weight: normal;
+}
+
 .feature > * {
   margin-top: 32px;
 }
