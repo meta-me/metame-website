@@ -1,10 +1,5 @@
 .hero {
   background-color: #212121;
-  height: 50%;
-}
-
-.features {
-  height: 50%; 
 }
 
 .feature > * {
