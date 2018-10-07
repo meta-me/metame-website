@@ -1,7 +1,8 @@
 .hero {
-  background-color: #212121
+  background-color: #212121;
+  height: 50%
 }
 
 .feature > * {
-  margin-top: 20px;
+  margin-top: 50px;
 }
