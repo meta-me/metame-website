@@ -1,12 +1,14 @@
-.hero {
+.feature > * {
+  margin-top: 32px;
+}
+
+.landing-body .jumbotron {
+  color: white;
   background-color: #212121;
 }
 
-h5.hero-description {
-  font-weight: normal;
-  width: 330px;
-}
-
-.feature > * {
-  margin-top: 32px;
+.logo {
+  width: 96px;
+  height: 96px;
+  margin-top: 15px;
 }
