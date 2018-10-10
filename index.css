@@ -1,14 +1,9 @@
-.feature > * {
-  margin-top: 32px;
-}
-
-.landing-body .jumbotron {
-  color: white;
-  background-color: #212121;
-}
-
 .logo {
   width: 96px;
   height: 96px;
   margin-top: 15px;
+}
+
+.feature > h5 {
+  margin-top: 16px;
 }
