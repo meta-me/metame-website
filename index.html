@@ -7,7 +7,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -16,7 +15,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="index.css" />
-
     <!-- Font Awesome CSS -->
     <link
       rel="stylesheet"
@@ -24,7 +22,6 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-
     <title>Meta Me</title>
   </head>
 
@@ -42,10 +39,11 @@
                   class="btn btn-primary btn-lg mt-3"
                   href="https://github.com/zeref09/metame-releases/releases/download/0.6.5/setup.exe"
                   role="button"
+                  onclick="telemetryDownload()"
                 >
                   <i class="fab fa-windows fa-lg"></i>
-                  <label class="download-text">Download for Windows</label></a
-                >
+                  <label class="download-text">Download for Windows</label>
+                </a>
               </div>
             </div>
           </div>
@@ -113,5 +111,42 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Telemetry -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script>
+      const URL = "http://me.is-an-engineer.com:8091";
+      const PRODUCT_ID = "fe17867f-2dfc-4046-956a-82ef162e508d";
+      const VERSION = "1.0.0";
+
+      function telemetryView() {
+        $.ajax(
+          `${URL}/TrackPageView?productId=${PRODUCT_ID}&version=${VERSION}`,
+          {
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({ page: window.location.href })
+          },
+          function() {}
+        );
+      }
+
+      function telemetryDownload() {
+        $.ajax(
+          `${URL}/TrackUserAction?productId=${PRODUCT_ID}&version=${VERSION}`,
+          {
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({
+              page: window.location.href,
+              action: "download"
+            })
+          },
+          function() {}
+        );
+      }
+
+      window.onload = telemetryView();
+    </script>
   </body>
 </html>
