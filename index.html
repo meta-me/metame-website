@@ -158,6 +158,9 @@
     }
 
     function telemetryDownload() {
+      gtag("event", "Download", {
+        event_category: "Windows Client"
+      });
       $.ajax(
         `${URL}/TrackUserAction?productId=${PRODUCT_ID}&version=${VERSION}`,
         {
