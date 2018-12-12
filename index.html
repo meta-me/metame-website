@@ -203,7 +203,7 @@
             $(location).attr("href", BASE_URL + "/registrationSuccess.html");
           },
           error: function(jqxhr, status, error) {
-            alert(error);
+            alert("Error:" + status + " " + error);
           }
         });
 
