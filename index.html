@@ -154,7 +154,8 @@
     const URL = "http://me.is-an-engineer.com:8091";
     const PRODUCT_ID = "fe17867f-2dfc-4046-956a-82ef162e508d";
     const VERSION = "1.0.0";
-    const BASE_URL = "https://getmetame.com";
+    const BASE_URL = "http://getmetame.com";
+    const EMAIL_API_ENDPOINT_URL = "http://me.is-an-engineer.com:3000";
 
     function telemetryView() {
       $.ajax(
@@ -195,7 +196,7 @@
 
         $.ajax({
           type: "POST",
-          url: "http://me.is-an-engineer.com:3000/email",
+          url: EMAIL_API_ENDPOINT_URL + "/email",
           data: form.serialize(), // serializes the form's elements.
           success: function(data) {
             // alert(data); // show response from the php script.
