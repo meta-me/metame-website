@@ -27,19 +27,6 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
-    <!-- Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-130179223-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-130179223-1");
-    </script>
 
     <title>Meta Me</title>
   </head>
@@ -67,10 +54,13 @@
                         type="email"
                         class="form-control"
                         placeholder="Enter email"
-                        name="email"
                       />
                       <div class="input-group-append">
-                        <button type="submit" class="btn btn-primary">
+                        <button
+                          type="submit"
+                          class="btn btn-primary"
+                          disabled="disabled"
+                        >
                           GET EARLY ACCESS
                         </button>
                       </div>
@@ -169,46 +159,52 @@
       );
     }
 
-    function telemetryDownload() {
-      gtag("event", "Download", {
-        event_category: "Windows Client"
-      });
-      $.ajax(
-        `${URL}/TrackUserAction?productId=${PRODUCT_ID}&version=${VERSION}`,
-        {
-          type: "POST",
-          contentType: "application/json",
-          data: JSON.stringify({
-            page: window.location.href,
-            action: "download"
-          })
-        },
-        function() {}
-      );
-    }
-
     window.onload = telemetryView();
 
-    $(function() {
+    $(document).ready(function() {
+      //enable or disable submit based on email value;
+      $("input[type='email']").on("input", function(e) {
+        var hasValue = $(this).val() != "";
+        $("button[type='submit']").prop("disabled", !hasValue);
+      });
+
+
       $("#registerForm").submit(function(e) {
         var form = $(this);
-        // var url = form.attr("action");
+
+        var buttonText = $("button[type='submit']").text();
+        $("button[type='submit']").prop("disabled", true);
+        $("button[type='submit']").text("SUBMITTING...");
 
         $.ajax({
           type: "POST",
           url: EMAIL_API_ENDPOINT_URL + "/email",
           data: form.serialize(), // serializes the form's elements.
           success: function(data) {
-            // alert(data); // show response from the php script.
             $(location).attr("href", BASE_URL + "/registrationSuccess.html");
           },
           error: function(jqxhr, status, error) {
             alert("Error:" + status + " " + error);
+            $("button[type='submit']").prop("disabled", false);
+            $("button[type='submit']").text(buttonText);
           }
         });
 
         e.preventDefault(); // avoid to execute the actual submit of the form.
       });
     });
+  </script>
+  <!-- Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-130179223-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-130179223-1");
   </script>
 </html>
