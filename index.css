@@ -4,6 +4,10 @@ body {
   height: 100%;
 }
 
+#registerForm {
+  margin-top: 16px;
+}
+
 .landing-body {
   min-height: 100%;
   display: flex;
