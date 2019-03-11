@@ -1,0 +1,36 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+#registerForm {
+  margin-top: 16px;
+}
+
+.landing-body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 96px;
+  height: 96px;
+  margin-top: 15px;
+}
+
+.feature > h5 {
+  margin-top: 16px;
+}
+
+.download-text {
+  margin: 0 0 0 8px;
+  font-weight: bold;
+}
+
+.value-proposition {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
