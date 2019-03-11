@@ -1,0 +1,6 @@
+# Rule 2
+User-agent: *
+Allow: /
+Disallow: /registrationSuccess.html
+
+Sitemap: https://getmetame.com/sitemap.xml
