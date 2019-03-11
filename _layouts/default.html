@@ -16,10 +16,7 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
     {% seo %}
-  </head>
-  <body>
-    {{ content }}
-    <!-- Google Analytics -->
+    <!-- Google Analytics - Needs to be in HEAD-->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-136003233-1"
@@ -33,5 +30,8 @@
 
       gtag("config", "UA-136003233-1");
     </script>
+  </head>
+  <body>
+    {{ content }}
   </body>
 </html>
