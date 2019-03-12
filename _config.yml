@@ -38,3 +38,5 @@ exclude:
   - vendor/ruby/
   - README.md
   - CNAME
+sass:
+  style: compressed

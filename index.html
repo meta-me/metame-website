@@ -2,53 +2,61 @@
 layout: default
 description: A privacy respecting automatic time tracking software that gives you insights on your productivity and digital habits.
 ---
-<div class="landing-body">
+
+<div class="bg-dark">
+  <nav class="navbar navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/icon.png" width="30" height="30" alt="" />
+        MetaMe
+      </a>
+    </div>
+  </nav>
+
   <div class="jumbotron bg-dark text-white">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-lg-6">
-          <div class="media">
-            <div class="media-body text-center text-lg-left">
-              <h1 class="display-4 mt-5">MetaMe</h1>
-              <h2 class="lead display-5">
-                Time tracking software to help you become more productive
-              </h2>
-              <form
-                id="registerForm"
-                class="form-inline justify-content-center justify-content-lg-start"
-              >
-                <div class="input-group">
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Enter email"
-                  />
-                  <div class="input-group-append">
-                    <button
-                      type="submit"
-                      class="btn btn-primary"
-                      disabled="disabled"
-                    >
-                      GET EARLY ACCESS
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+        <div class="col-sm-12 offset-lg-1 col-lg-10 offset-xl-2 col-xl-8">
+          <h1 class="text-center">
+            Time tracking software to help you become more productive
+          </h1>
+          <p class="lead text-center">
+            Our software automatically analyzes your computer usage to give you
+            insights
+          </p>
+
+          <div class="hero-image">
+            <img
+              src="assets/screenshot.gif"
+              width="100%"
+              alt="A screenshot of MetaMe in action"
+              title="MetaMe screenshot"
+            />
           </div>
-        </div>
-        <div class="col-xs-12 col-lg-6 mt-4 mt-lg-0">
-          <img
-            src="assets/screenshot.gif"
-            width="100%"
-            alt="A screenshot of MetaMe in action"
-            title="MetaMe screenshot"
-          />
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="landing-body">
+  <form
+    id="registerForm"
+    class="form-inline justify-content-center justify-content-lg-start"
+  >
+    <div class="input-group">
+      <input
+        type="email"
+        name="email"
+        class="form-control"
+        placeholder="Enter email"
+      />
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-primary" disabled="disabled">
+          GET EARLY ACCESS
+        </button>
+      </div>
+    </div>
+  </form>
   <div class="container value-proposition">
     <div class="row justify-content-center">
       <div class="feature col-xs-12 col-md-6 col-lg-4 text-center mt-4">

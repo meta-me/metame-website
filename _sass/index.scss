@@ -1,0 +1,34 @@
+.landing-body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-image {
+  margin-top: 32px;
+}
+
+#registerForm {
+  margin: 32px 0;
+}
+
+.navbar {
+  a.navbar-brand {
+    line-height: 30px;
+  }
+}
+
+.feature > h5 {
+  margin-top: 16px;
+}
+
+.download-text {
+  margin: 0 0 0 8px;
+  font-weight: bold;
+}
+
+.value-proposition {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
