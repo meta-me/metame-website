@@ -177,25 +177,8 @@ description: A privacy respecting automatic time tracking software that gives yo
 
 <!-- Telemetry -->
 <script>
-  const TELEMETRY_URL = "https://telemetry.linkenlabs.com";
-  const PRODUCT_ID = "fe17867f-2dfc-4046-956a-82ef162e508d";
-  const VERSION = "1.0.0";
   const EMAIL_API_ENDPOINT_URL = "https://invitation-api.linkenlabs.com";
-
-  function telemetryView() {
-    $.ajax(
-      `${TELEMETRY_URL}/TrackPageView?productId=${PRODUCT_ID}&version=${VERSION}`,
-      {
-        type: "POST",
-        contentType: "application/json",
-        data: JSON.stringify({ page: window.location.href })
-      },
-      function() {}
-    );
-  }
-
   $(document).ready(function() {
-    telemetryView();
     //enable or disable submit based on email value;
     $("input[type='email']").on("input", function(e) {
       var hasValue = $(this).val() != "";
