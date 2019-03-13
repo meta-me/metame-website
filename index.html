@@ -183,7 +183,7 @@ description: Automatic time tracking software that gives you insights on your pr
         url: EMAIL_API_ENDPOINT_URL + "/email/" + email,
         data: {}, // serializes the form's elements.
         success: function(data) {
-          $(location).attr("href", "/registrationSuccess");
+          $(location).attr("href", "/registrationSuccess.html");
         },
         error: function(jqxhr, status, error) {
           alert("Error:" + status + " " + error);
