@@ -32,11 +32,45 @@ title: Download MetaMe
       </div>
     </div>
   </div>
-  <div v-if="release" class="container">
+  <div v-if="release" class="container mb-5">
     <div class="row justify-content-center">
       <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
         <h2 class="mt-4">Installation</h2>
-        <div v-text="message"></div>
+
+        <h3 class="h5 mt-4">Step 1. Download and run the setup file</h3>
+        <h3 class="h5 mt-4">
+          Step 2. Bypass Windows warnings (will be resolved soon)
+        </h3>
+        <p>
+          We are currently working on preventing this popup. As a a temporary
+          workaround you will need to click the "More Info" link, followed by
+          "Run Anyway" buttons. See below
+        </p>
+        <div>
+          <img src="/assets/WindowsDefender1.png" width="200px" />
+          <img src="/assets/WindowsDefender2.png" width="200px" />
+        </div>
+
+        <h3 class="h5 mt-4">Step 3. Complete the installation process</h3>
+        <div>
+          <img src="/assets/MetaMeSetup1.png" width="200px" />
+        </div>
+
+        <h2 class="mt-5">Troubleshooting and Feedback</h2>
+        <p>
+          This is still an early version, so not everything will be perfect. If
+          you have any feedback, suggestions, or bugs, you can contact us at our
+          Slack channel or email us.
+        </p>
+
+        <div>
+          <i class="fab fa-slack"></i> Slack:
+          <a
+            href="https://metameapp.slack.com/join/shared_invite/enQtNTA2ODc5NzU5MjM4LTZhN2ZlMGVkOGQzY2ZiNDJlMzc2M2NlMzdjZjkwYTAzZmFjMmQxYzNkOTk5MDU2YjU2MTE3M2MxODFjMzZhYzA"
+            >Invite link</a
+          >
+        </div>
+        <div><i class="far fa-envelope"></i> Email: hello@metameapp.com</div>
       </div>
     </div>
   </div>
