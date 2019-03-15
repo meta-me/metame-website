@@ -1,0 +1,83 @@
+---
+layout: default
+title: Download MetaMe
+---
+
+<div id="app">
+  <div class="bg-dark">
+    <div class="jumbotron bg-dark text-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
+            <h1>{{ page.title }}</h1>
+            <p class="lead">
+              <span v-if="release">
+                Latest version: <span v-text="release.name"></span>
+              </span>
+              <span v-else>
+                Loading...
+              </span>
+            </p>
+
+            <div v-if="release">
+              <a
+                class="btn btn-primary btn-lg mt-2"
+                v-bind:href="getDownloadUrl()"
+                role="button"
+                ><i class="fab fa-windows"></i> Download for Windows</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div v-if="release" class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
+        <h2 class="mt-4">Installation</h2>
+        <div v-text="message"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+  var app = new Vue({
+    el: "#app",
+    data: {
+      message: "Hello Vue!",
+      release: undefined
+    },
+    methods: {
+      refresh: function() {
+        $.getJSON(
+          "https://api.github.com/repos/zeref09/metame-releases/releases/latest"
+        ).done(release => {
+          this.release = release;
+        });
+      },
+      getInstallerAsset: function() {
+        var assets = this.release.assets;
+
+        var installerAsset = assets.find(function(item) {
+          return item.content_type == "application/x-msdownload";
+        });
+
+        return installerAsset;
+      },
+      getDownloadUrl: function() {
+        var installerAsset = this.getInstallerAsset();
+        return installerAsset.browser_download_url;
+      }
+    },
+    created: function() {
+      this.refresh();
+    }
+  });
+</script>
+<script
+  src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+  integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+  crossorigin="anonymous"
+></script>
