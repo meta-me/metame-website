@@ -17,7 +17,12 @@ description: Automatic time tracking software that gives you insights on your pr
           </p>
           <div class="hero-image">
             <img
-              srcset="assets/screenshot-3x.png 3x, assets/screenshot-2x.png 2x, assets/screenshot-1x.png 1x" src="assets/screenshot-1x.png"
+              srcset="
+                assets/screenshot-3x.png 3x,
+                assets/screenshot-2x.png 2x,
+                assets/screenshot-1x.png 1x
+              "
+              src="assets/screenshot-1x.png"
               width="100%"
               alt="A screenshot of MetaMe in action"
               title="MetaMe screenshot"
@@ -92,10 +97,25 @@ description: Automatic time tracking software that gives you insights on your pr
     <div class="row  align-items-center">
       <div class="col-xs-12 col-md-6 mt-4 ">
         <h2 class="h1">Productivity metrics at a glance</h2>
-        <p class="lead">Visualize your productiveness with a click.</p>
+        <p class="lead">
+          The dashboard breaks down your computer usage by productive,
+          unproductive and neutral. The heat map allows you to compare your
+          current day to your past.
+        </p>
+        <p class="lead">
+          Stop guessing and start knowing your productivity down to the second.
+        </p>
       </div>
       <div class="col-xs-12 col-md-6 mt-4 order-first order-md-last">
-        <img srcset="assets/dashboard-analytics-3x.png 3x, assets/dashboard-analytics-2x.png 2x, assets/dashboard-analytics-3x.png 3x" src="assets/dashboard-analytics-1x.png" style="width:100%;" />
+        <img
+          srcset="
+            assets/dashboard-analytics-3x.png 3x,
+            assets/dashboard-analytics-2x.png 2x,
+            assets/dashboard-analytics-3x.png 3x
+          "
+          src="assets/dashboard-analytics-1x.png"
+          style="width:100%;"
+        />
       </div>
     </div>
   </div>
@@ -104,12 +124,24 @@ description: Automatic time tracking software that gives you insights on your pr
   <div class="container">
     <div class="row  align-items-center">
       <div class="col-xs-12 col-md-6 mt-4">
-        <img srcset="assets/search-feature-3x.png 3x, assets/search-feature-2x.png 2x, assets/search-feature-1x.png 1x "src="assets/search-feature-1x.png" style="width:100%;" />
+        <img
+          srcset="
+            assets/search-feature-3x.png 3x,
+            assets/search-feature-2x.png 2x,
+            assets/search-feature-1x.png 1x
+          "
+          src="assets/search-feature-1x.png"
+          style="width :100%;"
+        />
       </div>
       <div class="col-xs-12 col-md-6 mt-4">
-        <h2 class="h1">Powerful search</h2>
+        <h2 class="h1">Search</h2>
         <p class="lead">
-          Know your time investment for every application & website.
+          Search for analytics on any application or website activity recorded
+          by MetaMe.
+        </p>
+        <p class="lead">
+          Understand time spent at your computer in a new level of detail.
         </p>
       </div>
     </div>
@@ -121,12 +153,24 @@ description: Automatic time tracking software that gives you insights on your pr
       <div class="col-xs-12 col-md-6 mt-4">
         <h2 class="h1">Dive into the details</h2>
         <P class="lead"
-          >Understand your historical usage patterns. See your digital habits
-          changes over time.</P
+          >Understand your historical usage patterns and see your digital habits
+          change over time.</P
         >
+        <p class="lead">
+          Be aware when you're scaling new peaks of productivity.
+        </p>
       </div>
       <div class="col-xs-12 col-md-6 mt-4  order-first order-md-last">
-        <img srcset="assets/dive-deep-4x.png 4x, assets/dive-deep-3x.png 3x, assets/dive-deep-2x.png 2x, assets/dive-deep-1x.png 1x"src="assets/dive-deep-1x.png" style="width:100%;" />
+        <img
+          srcset="
+            assets/dive-deep-4x.png 4x,
+            assets/dive-deep-3x.png 3x,
+            assets/dive-deep-2x.png 2x,
+            assets/dive-deep-1x.png 1x
+          "
+          src="assets/dive-deep-1x.png"
+          style="width:100%;"
+        />
       </div>
     </div>
   </div>
@@ -142,9 +186,10 @@ description: Automatic time tracking software that gives you insights on your pr
       <div class="col-xs-12 col-md-6 mt-4">
         <h2 class="h1">Private & Secure</h2>
         <p class="lead">
-          Your data is encrypted and stored locally. Only you can view your data
-          (yes, not even us).
+          Your data is encrypted and stored locally.
         </p>
+        <p class="lead"> Only you can view your data
+          (yes, not even us).</p>
       </div>
     </div>
   </div>
@@ -154,7 +199,10 @@ description: Automatic time tracking software that gives you insights on your pr
     <div class="row justify-content-center">
       <div class="col-12 text-center">
         <h2 class="h1">Try MetaMe today*</h2>
-        <form id="registerForm2" class="form-inline justify-content-center my-4">
+        <form
+          id="registerForm2"
+          class="form-inline justify-content-center my-4"
+        >
           <div class="input-group">
             <input
               type="email"
@@ -190,7 +238,6 @@ description: Automatic time tracking software that gives you insights on your pr
       var hasValue = $(this).val() != "";
       $("#registerForm2 button[type='submit']").prop("disabled", !hasValue);
     });
-
 
     $("form").submit(function(e) {
       var values = {};
