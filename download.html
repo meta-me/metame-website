@@ -98,9 +98,8 @@ title: Download MetaMe
       },
       getInstallerAsset: function() {
         var assets = this.release.assets;
-
         var installerAsset = assets.find(function(item) {
-          return item.content_type == "application/x-msdownload";
+          return item.name == "MetaMe-Installer.exe";
         });
 
         return installerAsset;
