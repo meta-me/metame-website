@@ -20,13 +20,9 @@ title: Download MetaMe
             </p>
 
             <div v-if="release">
-              <a
-                class="btn btn-primary btn-lg mt-2"
-                role="button"
-                v-bind:href="getDownloadUrl()"
-                v-on:click="sendGoogleAnalyticsDownloadEvent()"
-                ><i class="fab fa-windows"></i> Download for Windows 10</a
-              >
+              <a class="btn btn-primary btn-lg mt-2" role="button" v-bind:href="getDownloadUrl()"
+                v-on:click="sendGoogleAnalyticsDownloadEvent()"><i class="fab fa-windows"></i> Download for Windows
+                10</a>
             </div>
           </div>
         </div>
@@ -40,24 +36,14 @@ title: Download MetaMe
           <h2 class="mt-4">Installation</h2>
 
           <h3 class="h5 mt-4">Step 1. Download and run the setup file</h3>
-          <h3 class="h5 mt-4">
-            Step 2. Bypass Windows warnings (will be resolved soon)
-          </h3>
-          <p>
-            We are currently working on preventing this popup. As a a temporary
-            workaround you will need to click the "More Info" link, followed by
-            "Run Anyway" buttons. See below
-          </p>
-          <div>
-            <img src="/assets/WindowsDefender1.png" width="200px" />
-            <img src="/assets/WindowsDefender2.png" width="200px" />
-          </div>
-
-          <h3 class="h5 mt-4">Step 3. Complete the installation process</h3>
+          <h3 class="h5 mt-4">Step 2. Complete the installation process</h3>
           <div>
             <img src="/assets/MetaMeSetup1.png" width="200px" />
           </div>
-
+          <h3 class="h5 mt-4">Step 3. Confirmation</h3>
+          <div>
+            <img src="/assets/UACPopup.png" width="200px" />
+          </div>
           <h2 class="mt-5">Troubleshooting and Feedback</h2>
           <p>
             This is still an early version, so not everything will be perfect.
@@ -68,9 +54,8 @@ title: Download MetaMe
           <div>
             <i class="fab fa-slack"></i> Slack:
             <a
-              href="https://metameapp.slack.com/join/shared_invite/enQtNTA2ODc5NzU5MjM4LTZhN2ZlMGVkOGQzY2ZiNDJlMzc2M2NlMzdjZjkwYTAzZmFjMmQxYzNkOTk5MDU2YjU2MTE3M2MxODFjMzZhYzA"
-              >Invite link</a
-            >
+              href="https://metameapp.slack.com/join/shared_invite/enQtNTA2ODc5NzU5MjM4LTZhN2ZlMGVkOGQzY2ZiNDJlMzc2M2NlMzdjZjkwYTAzZmFjMmQxYzNkOTk5MDU2YjU2MTE3M2MxODFjMzZhYzA">Invite
+              link</a>
           </div>
           <div><i class="far fa-envelope"></i> Email: hello@metameapp.com</div>
         </div>
@@ -89,39 +74,36 @@ title: Download MetaMe
       release: undefined
     },
     methods: {
-      refresh: function() {
+      refresh: function () {
         $.getJSON(
           "https://api.github.com/repos/zeref09/metame-releases/releases/latest"
         ).done(release => {
           this.release = release;
         });
       },
-      getInstallerAsset: function() {
+      getInstallerAsset: function () {
         var assets = this.release.assets;
-        var installerAsset = assets.find(function(item) {
+        var installerAsset = assets.find(function (item) {
           return item.name == "MetaMe-Installer.exe";
         });
 
         return installerAsset;
       },
-      getDownloadUrl: function() {
+      getDownloadUrl: function () {
         var installerAsset = this.getInstallerAsset();
         return installerAsset.browser_download_url;
       },
-      sendGoogleAnalyticsDownloadEvent: function() {
+      sendGoogleAnalyticsDownloadEvent: function () {
         var downloadUrl = this.getDownloadUrl();
         gtag("event", "installer_download", {
           download_url: downloadUrl
         });
       }
     },
-    created: function() {
+    created: function () {
       this.refresh();
     }
   });
 </script>
-<script
-  src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
-  integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
-  crossorigin="anonymous"
-></script>
+<script src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+  integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
