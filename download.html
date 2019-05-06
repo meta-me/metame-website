@@ -11,7 +11,7 @@ title: Download MetaMe
           <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
             <h1>{{ page.title }}</h1>
             <p class="lead">
-              <span v-if="release">
+              <span v-cloak v-if="release">
                 Latest version: <span v-text="release.name"></span>
               </span>
               <span v-else>
@@ -19,7 +19,7 @@ title: Download MetaMe
               </span>
             </p>
 
-            <div v-if="release">
+            <div v-cloak v-if="release">
               <a class="btn btn-primary btn-lg mt-2" role="button" v-bind:href="getDownloadUrl()"
                 v-on:click="sendGoogleAnalyticsDownloadEvent()"><i class="fab fa-windows"></i> Download for Windows
                 10</a>
@@ -29,7 +29,7 @@ title: Download MetaMe
       </div>
     </div>
   </div>
-  <section>
+  <section v-cloak>
     <div v-if="release" class="container">
       <div class="row justify-content-center">
         <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
