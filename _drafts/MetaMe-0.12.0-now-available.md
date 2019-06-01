@@ -22,6 +22,8 @@ You can update to 0.12.0 by going to settings > update then clicking "check for 
    - Receive a notification when you are at 80% of your goal
 - Notifications settings
    - Have granular control over what notifications you would like to receive from MetaMe
+- Hide application from dashboard
+   - Hide an application by right clicking the application on the most used widget
 
 ###### Enhancements
 - Greatly improved dashboard performance
