@@ -6,29 +6,29 @@ title: MetaMe 0.12.0 now available
 
 We are happy to announce that MetaMe 0.12.0 is now available. This version gives you greater visibility on your time spent, a redesigned dashboard and some major performance optimizations and bug fixes.
 
-##### Review your day with greater precision
+### Review your day with greater precision
 
 The new 15 minute overview chart gives increased visibility of your activities within each hour. The increased granularity is great for anything from filling out timesheets to seeing your pomodoros.
 
 <img class="my-3" srcset="/assets/15-minute-overview-4x.png 4x, /assets/15-minute-overview-3x.png 3x, /assets/15-minute-overview-2x.png 2x, /assets/15-minute-overview-1x.png 1x" src="/assets/15-minute-overview-1x.png" alt="15 minute overview chart" width="480"/>
 
-##### Redesigned dashboard
+### Redesigned dashboard
 
 We have removed less popular components of the dashboard to make it less cluttered. The unproductive heatmap and chart has been removed and components rearranged.
 
-##### Performance improvements
+### Performance improvements
 
 Significant changes have been made under the hood to increase performance. This version has increased responsiveness whilst consuming less CPU and memory usage.
 
 <br/>
-##### Updating
+### Updating
 
 You can update to 0.12.0 by going to settings > update then clicking "check for updates". You can also download the latest version [here](/download.html)
 
 <br/>
-##### Changes
+### Changes
 
-###### New Features
+###### New features
 
 - Redesigned dashboard
   - Overview bar chart granularity increased to 15 minutes from 1 hour
