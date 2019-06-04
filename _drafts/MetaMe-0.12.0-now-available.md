@@ -16,10 +16,16 @@ The new 15 minute overview chart gives increased visibility of your activities w
 
 We have removed less popular components of the dashboard to make it less cluttered. The unproductive heatmap and chart has been removed and components rearranged.
 
+##### Performance improvements
+
+Significant changes have been made under the hood to increase performance. This version has increased responsiveness whilst consuming less CPU and memory usage.
+
+<br/>
 ##### Updating
 
 You can update to 0.12.0 by going to settings > update then clicking "check for updates". You can also download the latest version [here](/download.html)
 
+<br/>
 ##### Changes
 
 ###### New Features
