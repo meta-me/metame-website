@@ -4,7 +4,7 @@ author: Andrew
 title: MetaMe 0.12.0 now available
 ---
 
-We are happy to announce that MetaMe 0.12.0 is now available. This version gives you greater visibility on your time spent, an redesigned dashboard and some major performance optimizations and bug fixes.
+We are happy to announce that MetaMe 0.12.0 is now available. This version gives you greater visibility on your time spent, a redesigned dashboard and some major performance optimizations and bug fixes.
 
 ##### Review your day with greater precision
 
