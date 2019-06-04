@@ -4,7 +4,15 @@ author: Andrew
 title: MetaMe 0.12.0 now available
 ---
 
-We are happy to announce that MetaMe 0.12.0 is now available. This version has an improved dashboard, more granularity in the overview charts and many other improvements. This version also contains performance optimizations and many bug fixes.
+We are happy to announce that MetaMe 0.12.0 is now available. This version gives you greater visibility on your time spent, an redesigned dashboard and some major performance optimizations and bug fixes.
+
+##### Your productivity in greater detail
+See your day in the new 15 minute overview chart.  The increased granularity is great for anything from filling out timesheets to seeing your pomodoros.
+
+Insert image
+
+##### Redesigned dashboard
+We have removed less popular components of the dashboard to make it less busy and more streamlined.  The unproductive heatmap and chart has been removed and components rearranged.
 
 ##### Updating
 You can update to 0.12.0 by going to settings > update then clicking "check for updates".  You can also download the latest version [here](/download.html)
@@ -13,11 +21,11 @@ You can update to 0.12.0 by going to settings > update then clicking "check for 
 
 ###### New Features
 - Redesigned dashboard
-   - Removed unproductive bar chart and heat maps and relocated the most used applications
    - Overview bar chart granularity increased to 15 minutes from 1 hour
    - Overview bar chart shows activity from beginning of day
    - Productive bar chart now shows 96 data points instead of 48
    - Dashboard layout improved for higher resolution screens
+   - Removed unproductive bar chart and heat maps and relocated the most used applications
 - Goal progress notifications
    - Receive a notification when you are at 80% of your goal
 - Notifications settings
