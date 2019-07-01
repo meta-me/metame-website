@@ -4,16 +4,20 @@ author: Andrew
 title: MetaMe 0.13.0 now available
 ---
 
-MetaMe 0.13.0 is now available. This version has gives you more improved tooltips, redesigned goal history widget, and an improved application selection screen.
+MetaMe 0.13.0 is now available. This version gives you more improved tooltips, an improved application selection screen, and a redesigned goal history widget.
 
 ### Improved Tooltips
 Hovering over 15 minute bars now shows your top 5 most used applications for that period. This allows you to reconstruct your day in greater detail than before
 
-### Redesigned Goal History Widget
-The goal history widget has been redesigned to be clearer. The widget now shows days in the current week with the current day highlighted   
+<img class="my-3" srcset="/assets/enhanced-tooltip-2x.png 2x, /assets/enhanced-tooltip-1x.png 1x" src="/assets/enhanced-tooltip-1x.png" alt="MetaMe application selection screen" width="480"/>
 
 ### Improved application selection
 The application selection screen now allows you to filter results by "applications" and "websites". This makes it easier to search for the item you had in mind 
+
+<img class="my-3" srcset="/assets/app-selection-2x.png 2x, /assets/app-selection-1x.png 1x" src="/assets/app-selection-1x.png" alt="MetaMe application selection screen" width="480"/>
+
+### Redesigned Goal History Widget
+The goal history widget is now clearer. The widget now shows only the current week with the current day highlighted   
 
 <br/>
 ### Updating
