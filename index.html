@@ -14,6 +14,9 @@ description: MetaMe automatically analyzes your computer usage to improve your p
           <p class="lead">
             MetaMe automatically analyzes your computer usage to help improve your productivity
           </p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="/download.html">Download Now</a>
+          </p>
           <div class="hero-image">
             <img class="w-100" srcset="
                 assets/metame-dashboard-4x.png 4x,
@@ -71,19 +74,12 @@ description: MetaMe automatically analyzes your computer usage to improve your p
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center">
-        <h2 class="h1">Get MetaMe*. It's free!</h2>
-        <form id="registerForm" class="form-inline justify-content-center my-4">
-          <div class="input-group">
-            <input type="email" name="email" class="form-control" placeholder="Enter email" />
-            <div class="input-group-append">
-              <button type="submit" class="btn btn-primary" disabled="disabled">
-                GET METAME
-              </button>
-            </div>
-          </div>
-        </form>
-        <p>
-          * MetaMe only works for Windows 10
+        <h1>Track your productivity today*</h1>
+        <div class="my-4">
+          <a class="btn btn-primary btn-lg" href="/download.html">Download Now</a>
+        </div>
+        <p class="small">
+          * MetaMe currently only available on Windows 10
         </p>
       </div>
     </div>
@@ -138,7 +134,7 @@ description: MetaMe automatically analyzes your computer usage to improve your p
           Where did that time go?
         </p>
         <p class="lead">
-          View a complete timeline of your day with the activity chart
+          View a complete timeline of your day with the activity chart.
         </p>
         <p class="lead">
           See a detailed breakdown of each time block.
@@ -208,65 +204,15 @@ description: MetaMe automatically analyzes your computer usage to improve your p
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center">
-        <h2 class="h1">Get MetaMe*. It's free!</h2>
-        <form id="registerForm2" class="form-inline justify-content-center my-4">
-          <div class="input-group">
-            <input type="email" name="email" class="form-control" placeholder="Enter email" />
-            <div class="input-group-append">
-              <button type="submit" class="btn btn-primary" disabled="disabled">
-                GET METAME
-              </button>
-            </div>
-          </div>
-        </form>
-        <p>
-          * MetaMe only works for Windows 10
+        <h1>Get MetaMe now*. It's free!</h1>
+        <div class="my-4">
+          <a class="btn btn-primary btn-lg" href="/download.html">Download Now</a>
+        </div>
+        <p class="small">
+          * MetaMe currently only available on Windows 10
         </p>
       </div>
     </div>
   </div>
 </section>
 {% include footer.html %}
-<script>
-  const EMAIL_API_ENDPOINT_URL = "https://invitation-api.linkenlabs.com";
-  $(document).ready(function () {
-    //enable or disable submit based on email value;
-    $("#registerForm input[type='email']").on("input", function (e) {
-      var hasValue = $(this).val() != "";
-      $("#registerForm button[type='submit']").prop("disabled", !hasValue);
-    });
-
-    $("#registerForm2 input[type='email']").on("input", function (e) {
-      var hasValue = $(this).val() != "";
-      $("#registerForm2 button[type='submit']").prop("disabled", !hasValue);
-    });
-
-    $("form").submit(function (e) {
-      var values = {};
-      $.each($(this).serializeArray(), function (i, field) {
-        values[field.name] = field.value;
-      });
-
-      var email = values.email;
-      var buttonText = $("button[type='submit']").text();
-      $("button[type='submit']").prop("disabled", true);
-      $("button[type='submit']").text("SUBMITTING...");
-
-      $.ajax({
-        type: "POST",
-        url: EMAIL_API_ENDPOINT_URL + "/email/" + email,
-        data: {}, // serializes the form's elements.
-        success: function (data) {
-          $(location).attr("href", "/registrationSuccess.html");
-        },
-        error: function (jqxhr, status, error) {
-          alert("Error:" + status + " " + error);
-          $("button[type='submit']").prop("disabled", false);
-          $("button[type='submit']").text(buttonText);
-        }
-      });
-
-      e.preventDefault(); // avoid to execute the actual submit of the form.
-    });
-  });
-</script>
