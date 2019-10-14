@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="bg-dark">
+  <div class="py-4 bg-dark text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
+          <h1>FAQ</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="my-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
+        {% assign questions = site.data.faq | group_by: 'section' %}
+        {% for section in questions %}
+        <h3>{{section.name}}</h3>
+
+          {% assign items = section.items | sort: 'order' %}
+          {% for item in items %}
+          <div>{{item.question}}</div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
