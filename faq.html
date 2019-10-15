@@ -20,10 +20,10 @@ layout: default
         {% assign questions = site.categories.help | group_by: 'section' %}
         {% for section in questions %}
         <h2 class="h4 mt-4">{{section.name}}</h2>
-          {% assign items = section.items | sort: 'order' %}
-          {% for item in items %}
-          <div>{{item.title}}</div>
-          {% endfor %}
+        {% assign items = section.items | sort: 'order' %}
+        {% for item in items %}
+        <div class="h5"><a href="{{item.url}}">{{item.title}}</a></div>
+        {% endfor %}
         {% endfor %}
       </div>
     </div>
