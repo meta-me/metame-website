@@ -1,4 +1,5 @@
 ---
+title: Frequently asked questions
 layout: default
 ---
 
@@ -7,7 +8,7 @@ layout: default
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
-          <h1>FAQ</h1>
+          <h1>{{ page.title }}</h1>
         </div>
       </div>
     </div>
@@ -20,10 +21,11 @@ layout: default
         {% assign questions = site.categories.help | group_by: 'section' %}
         {% for section in questions %}
         <h2 class="h4 mt-4">{{section.name}}</h2>
-        {% assign items = section.items | sort: 'order' %}
-        {% for item in items %}
-        <div><a href="{{item.url}}">{{item.title}}</a></div>
-        {% endfor %}
+        <ul class="list">
+          {% for item in section.items %}
+          <li><a href="{{item.url}}">{{item.title}}</a></li>
+          {% endfor %}
+        </ul>
         {% endfor %}
       </div>
     </div>
