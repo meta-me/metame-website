@@ -17,12 +17,12 @@ layout: default
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
-        {% assign questions = site.data.faq | group_by: 'section' %}
+        {% assign questions = site.categories.help | group_by: 'section' %}
         {% for section in questions %}
         <h2 class="h4 mt-4">{{section.name}}</h2>
           {% assign items = section.items | sort: 'order' %}
           {% for item in items %}
-          <div>{{item.question}}</div>
+          <div>{{item.title}}</div>
           {% endfor %}
         {% endfor %}
       </div>
