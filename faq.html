@@ -18,8 +18,8 @@ layout: default
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
-        {% assign questions = site.categories.help | group_by: 'section' %}
-        {% for section in questions %}
+        {% assign sections = site.categories.help | group_by: 'section' | sort: 'name' %}
+        {% for section in sections %}
         <h2 class="h4 mt-4">{{section.name}}</h2>
         <ul class="list">
           {% for item in section.items %}
