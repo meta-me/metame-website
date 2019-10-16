@@ -12,4 +12,4 @@ Only you can see your computer usage data. Your computer usage data is stored lo
 #### Who can see my telemetry data?
 Telemetry data is sent to our servers to help us improve the MetaMe. Telemetry data will never be shared with other parties.
 
-You can choose turn off telemetry in the settings.
+For those uncomfortable about telemetry, you can turn off telemetry in the settings.
