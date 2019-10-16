@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<div class="my-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
+        <div class="mt-4">
+          <a class="h5" href="/faq.html">
+            <span class="oi oi-arrow-left" title="arrow left" aria-hidden="true"></span>
+            <span>BACK</span>
+          </a>
+        </div>
+        <h1 class="mt-2">{{page.title}}</h1>
+        <div class="mt-4">
+          {{content}}
+        </div>
+      </div>
+    </div>
+    <!-- More from same section -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
+        {% assign sections = site.categories.help | group_by:"section" %}
+        {% for section in sections %}
+        {% if section.name == page.section %}
+        <h2 class="h4 mt-4">More from <span class="font-italic">{{section.name}}</span></h2>
+        <ul class="list">
+          {% for item in section.items %}
+          {% if item.title != page.title %}
+          <li><a href="{{item.url}}">{{item.title}}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <!-- More from other sections -->
+    <!-- <div class="row justify-content-center mt-4">
+      <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
+        {% assign sections = site.categories.help | group_by:"section" %}
+        {% for section in sections %}
+        {% if section.name != page.section %}
+        <h2 class="h4 mt-4">{{section.name}}</h2>
+        <ul class="list">
+          {% for item in section.items %}
+          <li><a href="{{item.url}}">{{item.title}}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div> -->
+  </div>
+</div>
