@@ -8,7 +8,7 @@ MetaMe collects telemetry data to help us improve the product. Telemetry also he
 Telemetry can be turned off in Settings > Diagnostics.
 
 #### What does telemetry collect?
-Telemetry collects the following:
+Telemetry data is limited to the following:
 
 1. Unique id - A unique id is generated when MetaMe is installed. This id helps us track user retention.
 2. IP address - The IP address is used to understand which countries our users are located.
