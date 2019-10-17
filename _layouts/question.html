@@ -12,7 +12,7 @@ layout: default
             <span>BACK</span>
           </a>
         </div>
-        <h1 class="mt-2">{{page.title}}</h1>
+        <h1 class="mt-4">{{page.title}}</h1>
         <div>
           {{page.date | date_to_string}}
         </div>
@@ -29,7 +29,8 @@ layout: default
         {% if section.name == page.section %}
         <h2 class="h4 mt-4">More from <span class="font-italic">{{section.name}}</span></h2>
         <ul class="list">
-          {% for item in section.items %}
+          {% assign sorteditems = section.items | sort: 'title' %}
+          {% for item in sorteditems %}
           {% if item.title != page.title %}
           <li><a href="{{item.url}}">{{item.title}}</a></li>
           {% endif %}
