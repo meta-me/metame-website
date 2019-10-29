@@ -19,8 +19,8 @@ title: Download MetaMe
               </span>
             </div>
             <div v-cloak v-if="release">
-              <a class="btn btn-primary btn-lg mt-3" role="button" v-bind:href="getDownloadUrl()"
-                v-on:click="sendGoogleAnalyticsDownloadEvent()"><i class="fab fa-windows"></i> Download for Windows
+              <a class="btn btn-primary btn-lg mt-3" role="button" v-bind:href="getDownloadUrl()"><i
+                  class="fab fa-windows"></i> Download for Windows
                 10</a>
               <p class="small mt-3">
                 * MetaMe is only available on Windows 10
@@ -93,12 +93,6 @@ title: Download MetaMe
       getDownloadUrl: function () {
         var installerAsset = this.getInstallerAsset();
         return installerAsset.browser_download_url;
-      },
-      sendGoogleAnalyticsDownloadEvent: function () {
-        var downloadUrl = this.getDownloadUrl();
-        gtag("event", "installer_download", {
-          download_url: downloadUrl
-        });
       }
     },
     created: function () {
