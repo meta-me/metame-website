@@ -20,4 +20,4 @@ Telemetry data is limited to the following:
   - MetaMe version
   - Timestamp of the event
 
-IP addresses are not stored to protect your privacy. 
+We do not store IP addresses. 
