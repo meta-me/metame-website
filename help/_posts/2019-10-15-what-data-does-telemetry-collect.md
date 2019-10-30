@@ -5,7 +5,7 @@ section: Privacy
 ---
 
 MetaMe collects telemetry data to help us improve the product. Telemetry also helps fix issues in MetaMe. 
-Telemetry can be turned off in Settings > Diagnostics.
+Telemetry is off by default.
 
 #### What does telemetry collect?
 Telemetry data is limited to the following:
