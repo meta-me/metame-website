@@ -16,6 +16,7 @@
 title: MetaMe
 description: Time tracking software to help you become more productive
 email: hello@linkenlabs.com
+productname: "MetaMe"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://getmetame.com # the base hostname & protocol for your site, e.g. http://example.com
 logo: /assets/icon.png
