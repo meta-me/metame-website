@@ -7,12 +7,16 @@ layout: default
       <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
         <div class="mt-4">
           <a class="h5" href="/faq.html">
-            <span class="oi oi-arrow-left" title="arrow left" aria-hidden="true"></span>
+            <!-- <span class="oi oi-arrow-left" title="arrow left" aria-hidden="true"></span> -->
+            <i class="fas fa-arrow-left"></i>
             <span>BACK</span>
           </a>
         </div>
-        <h1 class="mt-2">{{page.title}}</h1>
-        <div class="mt-4">
+        <h1 class="mt-4">{{page.title}}</h1>
+        <div>
+          {{page.date | date_to_string}}
+        </div>
+        <div class="mt-3">
           {{content}}
         </div>
       </div>
@@ -25,7 +29,8 @@ layout: default
         {% if section.name == page.section %}
         <h2 class="h4 mt-4">More from <span class="font-italic">{{section.name}}</span></h2>
         <ul class="list">
-          {% for item in section.items %}
+          {% assign sorteditems = section.items | sort: 'title' %}
+          {% for item in sorteditems %}
           {% if item.title != page.title %}
           <li><a href="{{item.url}}">{{item.title}}</a></li>
           {% endif %}
@@ -35,21 +40,5 @@ layout: default
         {% endfor %}
       </div>
     </div>
-    <!-- More from other sections -->
-    <!-- <div class="row justify-content-center mt-4">
-      <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
-        {% assign sections = site.categories.help | group_by:"section" %}
-        {% for section in sections %}
-        {% if section.name != page.section %}
-        <h2 class="h4 mt-4">{{section.name}}</h2>
-        <ul class="list">
-          {% for item in section.items %}
-          <li><a href="{{item.url}}">{{item.title}}</a></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        {% endfor %}
-      </div>
-    </div> -->
   </div>
 </div>

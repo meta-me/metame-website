@@ -10,18 +10,21 @@ title: Download MetaMe
         <div class="row justify-content-center">
           <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
             <h1>{{ page.title }}</h1>
-            <p class="lead">
+            <div class="lead">
               <span v-cloak v-if="release">
                 Latest version: <span v-text="release.name"></span>
               </span>
               <span v-else>
                 Loading...
               </span>
-            </p>
+            </div>
             <div v-cloak v-if="release">
-              <a class="btn btn-primary btn-lg mt-2" role="button" v-bind:href="getDownloadUrl()"
-                v-on:click="sendGoogleAnalyticsDownloadEvent()"><i class="fab fa-windows"></i> Download for Windows
+              <a class="btn btn-primary btn-lg mt-3" role="button" v-bind:href="getDownloadUrl()"><i
+                  class="fab fa-windows"></i> Download for Windows
                 10</a>
+              <p class="small mt-3">
+                * {{ site.productname }} is only available on Windows 10
+              </p>
             </div>
           </div>
         </div>
@@ -49,17 +52,12 @@ title: Download MetaMe
             If you have any feedback, suggestions, or bugs, please contact us
             using any of the channels below.
           </p>
-
+          <div><i class="far fa-envelope"></i> Email: hello@metameapp.com</div>
           <div>
             <i class="fab fa-slack"></i> Slack:
             <a
               href="https://metameapp.slack.com/join/shared_invite/enQtNTA2ODc5NzU5MjM4LTZhN2ZlMGVkOGQzY2ZiNDJlMzc2M2NlMzdjZjkwYTAzZmFjMmQxYzNkOTk5MDU2YjU2MTE3M2MxODFjMzZhYzA">Invite
               link</a>
-          </div>
-          <div><i class="far fa-envelope"></i> Email: hello@metameapp.com</div>
-          <div>
-            <i class="fab fa-product-hunt"></i> Product Hunt: <a
-              href="https://www.producthunt.com/posts/metame-for-windows">Product link</a>
           </div>
         </div>
       </div>
@@ -68,7 +66,7 @@ title: Download MetaMe
 </div>
 
 {% include footer.html %}
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="/assets/js/vue.min.js"></script>
 <script>
   var app = new Vue({
     el: "#app",
@@ -95,12 +93,6 @@ title: Download MetaMe
       getDownloadUrl: function () {
         var installerAsset = this.getInstallerAsset();
         return installerAsset.browser_download_url;
-      },
-      sendGoogleAnalyticsDownloadEvent: function () {
-        var downloadUrl = this.getDownloadUrl();
-        gtag("event", "installer_download", {
-          download_url: downloadUrl
-        });
       }
     },
     created: function () {
@@ -108,10 +100,3 @@ title: Download MetaMe
     }
   });
 </script>
-<!-- Event snippet for Download page conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-757868054/1tx-CL6PzqkBEJbMsOkC'});
-</script>
-
-<script src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
-  integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>

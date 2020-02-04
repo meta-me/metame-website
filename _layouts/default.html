@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link href="/assets/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
-    {% seo %}
-    <!-- Google Analytics - Needs to be in HEAD-->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-136003233-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-136003233-1", { optimize_id: "GTM-PW8W4BH" });
-    </script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-  </head>
-  <body>
-    {% include navbar.html %}
-    {{ content }}
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <!--load hosted font-awesome -->
+  <link href="/assets/css/all.min.css" rel="stylesheet">
+  {% seo %}
+  <script src="/assets/js/jquery-3.4.1.min.js"></script>
+</head>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<body>
+  {% include navbar.html %}
+  {{ content }}
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+
+  {% if jekyll.environment == "production" %}
+  <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+  <script>
+    (function (f, a, t, h, o, m) {
+      a[h] = a[h] || function () {
+        (a[h].q = a[h].q || []).push(arguments)
+      };
+      o = f.createElement('script'),
+        m = f.getElementsByTagName('script')[0];
+      o.async = 1; o.src = t; o.id = 'fathom-script';
+      m.parentNode.insertBefore(o, m)
+    })(document, window, '//fathom.linkenlabs.com/tracker.js', 'fathom');
+    fathom('set', 'siteId', 'HQRFY');
+    fathom('trackPageview');
+  </script>
+  <!-- / Fathom -->
+  {% endif %}
+</body>
+
 </html>
