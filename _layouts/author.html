@@ -6,16 +6,13 @@ layout: default
     <div class="row justify-content-center">
       <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
         <h1>{{page.name}}</h1>
-        <div class="d-flex">
-          <div>
-            <a href="mailto:{{page.email}}" class="text-white"><i class="fas fa-envelope"></i> </a>
-          </div>
-          <div class="mx-4">
-            <a href="//twitter.com/{{page.twitter}}" class="text-white"><i class="fab fa-twitter"></i></a>
-          </div>
+        <p class="lead">{{page.about}}</p>
+        <div>
+          <a href="mailto:{{page.email}}" class="text-white"><i class="fas fa-envelope"></i> {{page.email}}</a>
         </div>
-        <div class="mt-2">
-          {{content}}
+        <div>
+          <a href="//twitter.com/{{page.twitter}}" class="text-white"><i class="fab fa-twitter"></i>
+            {{page.twitter}}</a>
         </div>
       </div>
     </div>
