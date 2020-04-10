@@ -1,6 +1,6 @@
 ---
 name: Andrew
 email: andrew@metameapp.com
-twitter: 
+twitter: Andrew76936316
 ---
 Andrew builds MetaMe
