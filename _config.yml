@@ -41,3 +41,13 @@ exclude:
   - CNAME
 sass:
   style: compressed
+collections:
+  authors:
+     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"

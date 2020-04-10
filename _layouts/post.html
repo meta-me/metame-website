@@ -1,15 +1,19 @@
 ---
 layout: default
 ---
+{% assign author = site.authors | where: 'name', page.author | first %}
 <div class="my-4">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-12 col-lg-10 col-xl-8 text-left">
                 <h1>{{page.title}}</h1>
                 <div>
-                    {{page.date | date_to_string}}
+                    By <a href="{{author.url}}" class="text-body">{{author.name}}</a>
                 </div>
-                <div class="mt-3">
+                <div>
+                    {{page.date | date:'%B %-d, %Y'}}
+                </div>
+                <div class="mt-4">
                     {{content}}
                 </div>
             </div>
