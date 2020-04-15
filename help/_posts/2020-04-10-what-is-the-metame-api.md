@@ -9,14 +9,14 @@ The REST API is useful for getting data and statistics about your computer usage
 The REST API is exposed at the following endpoint:
 
 ```
-http://localhost:9000/api
+http://localhost/Temporary_Listen_Addresses/MetaMe/api
 ```
 
 #### Using the REST API
 To test whether the API is running, open in a browser the following url: 
 
 ```
-http://localhost:9000/api/foreground
+http://localhost/Temporary_Listen_Addresses/MetaMe/api/foreground
 ```
 This shows information on your current foreground window.
 

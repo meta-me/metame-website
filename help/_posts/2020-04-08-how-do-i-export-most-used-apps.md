@@ -7,13 +7,13 @@ section: REST API
 You can export the top x applications used for a time period using following endpoint:
 
 ```
-http://localhost:9000/api/analytics/most-used-apps?start={start}&end={end}&limit={limit}
+http://localhost/Temporary_Listen_Addresses/MetaMe/api/analytics/most-used-apps?start={start}&end={end}&limit={limit}
 ```
 
 For top x applications in a group you can use the optional group parameter:
 
 ```
-http://localhost:9000/api/analytics/most-used-apps?start={start}&end={end}&limit={limit}&group={group}
+http://localhost/Temporary_Listen_Addresses/MetaMe/api/analytics/most-used-apps?start={start}&end={end}&limit={limit}&group={group}
 ```
 
 Parameters

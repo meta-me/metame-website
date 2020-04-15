@@ -7,7 +7,7 @@ section: REST API
 You can export your time series data using following endpoint:
 
 ```
-http://localhost:9000/api/series?groupName={groupName}&start={start}&interval={interval}&length={length}
+http://localhost/Temporary_Listen_Addresses/MetaMe/api/series?groupName={groupName}&start={start}&interval={interval}&length={length}
 ```
 
 Parameters
