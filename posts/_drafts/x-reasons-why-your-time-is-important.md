@@ -8,16 +8,12 @@ title: 7 reasons why your time is valuable
 <span class="font-italic">"One of the biggest illusions that we live in is that we have unlimited time. With that mindset, we are uncontrolled to waste it as much as we can."</span> - Neeraj Agnihotri
 </div>
 
-<!-- <div class="text-right mb-4">
-<span class="font-italic">"Now is the time for you to reflect, not only that all things are mortal, but also that their mortality is subject to no fixed law. Whatever can happen at any time can happen today"</span> - Seneca
-</div> -->
-
 <div class="text-right mb-4">
-<span class="font-italic">"You have exactly one life in which to do everything you'll ever do"</span> - Colin Wright
+<span class="font-italic">"We never live; we are always in the expectation of living"</span> - Voltaire
 </div>
 
 <div class="text-right mb-4">
-<span class="font-italic">"Make your lives a masterpiece, you only get one canvas."</span> - E.A Bucchianeri
+<span class="font-italic">"You have exactly one life in which to do everything you'll ever do"</span> - Colin Wright
 </div>
 
 
@@ -29,11 +25,11 @@ Our time is finite and [more limited than you think](https://waitbutwhy.com/2014
 
 ## 2. Time flows constantly
 
-Time doesn't stop for anyone. Whether we sleep or wake, the vast machinery of the universe still goes on. Time also can't be reversed. As each moment passes, it slips away forever into the past. This makes every moment precious.
+Time doesn't stop for anyone. Whether we sleep or wake, the vast machinery of the universe still goes on. As each moment passes, it slips away forever into the past. This makes every moment precious.
 
 ## 3. Time left is uncertain
 
-Human bodies are fragile. Our life and the lives of those around you can be taken in the most unexpected time. As mortals, our plans and ambitions can be cut short without any warning.
+Unexpected events may cut short your plans and ambitions. Our lives and the lives of those around you can be taken when you least expect it.
 
 Our lives are brief, but no one knows how brief. This makes the time you have now, and the time you can still share with your loved ones so much more valuable.
 
@@ -65,10 +61,10 @@ We are also at the brink of several exciting breakthroughs as a species. Humans 
 
 Imagine what our ancestors would have given to see the progress of humanity today. We are living in an incredibly exciting time.
 
-## Conclusion
+## Summary
 
 Your time is incredibly valuable. It is scarce, continually slipping away and you don’t know when your journey will end. Your life is also incredibly valuable. You are moulded by the resources and time of your family and close ones. You have great capacity to sense, experience and think. Within you is great potential to transform yourself and those around you and you live in the greatest time in human history.
 
-We are all directors of our own life story. Let us all create stories worth telling.
+We are all directors of our own life story. Let us all create stories we are proud of.
 
 Andrew
