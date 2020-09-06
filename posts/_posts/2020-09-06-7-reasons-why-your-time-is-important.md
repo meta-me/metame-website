@@ -2,6 +2,7 @@
 layout: post
 author: Andrew
 title: 7 reasons why your time is valuable
+excerpt: As life strings us along, it is easy to forget the value of our time. Here are 7 reasons why your time is valuable.
 ---
 
 <div class="text-right mb-4">
