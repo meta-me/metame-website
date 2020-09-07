@@ -21,13 +21,13 @@ As life strings us along, it is easy to forget the value of our time. Here are 7
 
 ## 1. Time is scarce
 
-Your time is finite and [more limited than you think](https://waitbutwhy.com/2014/05/life-weeks.html). There isn’t enough time to visit all the places, taste all the foods, or listen to all the music. One could easily spend several lifetimes learning, creating, discovering.  
+Your time is finite and [more limited than you think](https://waitbutwhy.com/2014/05/life-weeks.html). There isn’t enough time to visit all the places, taste all the foods, or listen to all the music. One could easily spend several lifetimes learning, creating, discovering.
 
 The world has boundless adventures waiting, but we have so less time. Everything you'll ever do must fit into the time you have left. This makes your time incredibly valuable.
 
 ## 2. Time flows constantly
 
-Time constantly flows and doesn't stop for anyone. Whether we sleep or wake, the vast machinery of the universe still goes on. 
+Time constantly flows and doesn't stop for anyone. Whether we sleep or wake, the vast machinery of the universe still goes on.
 
 As each moment passes, it slips away forever into the past. This makes every moment precious.
 
@@ -71,4 +71,8 @@ Your time is incredibly valuable. It is scarce, continually slipping away and yo
 
 We are all directors of our own life story. Let us all create stories we are proud of.
 
+<div class="h5 mt-5 mb-4">
 Andrew
+</div>
+
+Do you want to track your time? Check out our [free time tracking software](https://getmetame.com). 
