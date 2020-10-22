@@ -45,7 +45,7 @@ The world we enjoy each day is a gift built from the blood, sweat and tears of o
 
 ## 5. Time as a human
 
-Considering the myriad of lifeforms on the [phylogenetic tree](https://en.wikipedia.org/wiki/Phylogenetic_tree), being human is like winning the lottery. We have wonderful physical bodies capable breathing, smelling, tasting, hearing and seeing. We can experience a huge range of emotions such as joy, love, and passion. We have complex brains capable of planning, problem solving and learning. We have the intellect to understand this world, creativity to create masterpieces of art and music, the ability to inspire others.
+Considering the myriad of lifeforms on the [phylogenetic tree](https://en.wikipedia.org/wiki/Phylogenetic_tree), being human is like winning the lottery. We have wonderful physical bodies capable of breathing, smelling, tasting, hearing and seeing. We feel a huge range of emotions such as joy, love, and passion. We have complex brains capable of planning, problem solving and learning. We have the intellect to understand this world, creativity to create masterpieces of art and music, the ability to inspire others.
 
 You have the body and mind of the wisest and most intelligent creature on earth. This has value.
 
@@ -53,7 +53,7 @@ You have the body and mind of the wisest and most intelligent creature on earth.
 
 Your time is valuable because you affect the world around you. While many things are outside of our control, there are many things we can control. A smile, a conversation, a kind gesture can have a huge impact on other people’s lives.
 
-We all stand on the shoulders of giants; men and women who have moved societies, nations and humanity. Within all of us is the remarkable ability to dream, transform, and self actualize. Your time is potential energy to mould yourself and the world to your image.
+We stand on the shoulders of giants; men and women who moved societies, nations and humanity. Within all of us is the remarkable ability to dream, transform, and self actualize. Your time is potential energy to mould yourself and the world to your image.
 
 ## 7. Great time to be alive
 
@@ -75,4 +75,4 @@ We are all directors of our own life story. Let us all create stories we are pro
 Andrew
 </div>
 
-Do you want to track your time? Check out our [free time tracking software](https://getmetame.com). 
+Your time is incredibly valuable. Track it today out our [free time tracking software](https://getmetame.com). 
