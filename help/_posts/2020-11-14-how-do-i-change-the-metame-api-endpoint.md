@@ -6,7 +6,7 @@ section: REST API
 
 The default MetaMe API url setting is http://+:80/Temporary_Listen_Addresses/MetaMe/api. 
 
-This url setting can be changed by going to Settings > General and modifying the `--url` parameter. Click "SAVE & RESTART" to save the settings and restart.
+From version 0.20.1, this url setting can be changed by going to Settings > General and modifying the `--url` parameter. Click "SAVE & RESTART" to save the settings and restart.
 
 The url prefix "+" or "*" must be used in place of "localhost"
 
