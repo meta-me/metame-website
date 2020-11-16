@@ -8,7 +8,7 @@ Hosting the MetaMe API on a different port involves setting up appropriate permi
 
 ## Step 1. Add urlacl permission for your url using netsh
 
-E.g. to setup MetaMe API on port 9000 run the following:
+E.g. to setup MetaMe API on port 9000, open command prompt in Administrator mode and run the following :
 
 `netsh http add urlacl url=http://+:9000/ user=\Everyone`
 
