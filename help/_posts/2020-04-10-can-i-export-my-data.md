@@ -4,4 +4,6 @@ title: Can I export my data?
 section: General 
 ---
 
-Yes! You can export data using MetaMe's REST API. You can read more about it [here](/help/2020/04/10/what-is-the-metame-api)
+Yes! MetaMe has two ways for you to export data: 
+- Exporting to CSV file. Find out how [here](/help/2021/04/07/how-do-i-export-to-csv)
+- Using the REST API. Learn more [here](/help/2020/04/10/what-is-the-metame-api)
